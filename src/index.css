@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#030303] text-slate-300 antialiased;
+    font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass-container {
+    @apply bg-white/[0.02] backdrop-blur-3xl border border-white/[0.08] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)];
+  }
+
+  .glass-card-inner {
+    @apply bg-white/[0.03] border border-white/[0.1] rounded-3xl p-6;
+  }
+
+  .emerald-glow-soft {
+    box-shadow: 0 0 50px -10px rgba(16, 185, 129, 0.15);
+  }
+
+  .ripple {
+    @apply absolute rounded-full border border-emerald-500/20 animate-ping;
+  }
+}
+
+.bg-obsidian-main {
+  background: radial-gradient(circle at 50% -10%, #0d121f 0%, #030303 100%);
+}
